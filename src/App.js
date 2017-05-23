@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import profilePic from './kirby.png';
 import './App.css';
 import Navbar from './containers/Navbar'
 import ProfileCard from './components/ProfileCard'
@@ -15,7 +16,11 @@ class App extends Component {
       <div className='page'>
         <div className='container-fluid top-padding'>
           <div className='col-md-2'>
-            <ProfileCard />
+            <ProfileCard
+              className="projectIcon"
+              src={profilePic}
+              name="Kirby Shabaga"
+              oneLiner="Virtual Reality/Futurist" />
           </div>
           <div className='col-md-8'>
             <Content />

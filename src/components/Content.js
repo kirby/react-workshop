@@ -1,9 +1,13 @@
 import React, {Component} from 'react'
 
+import QuestionAnswerComponent from './QuestionAnswerComponent'
+
 class Content extends Component {
   render(){
     return(<div>
-      and I'm your main content
+      <QuestionAnswerComponent
+        question="Where am I located?"
+        answer="Seattle, WA" />
       </div>)
   }
 }
